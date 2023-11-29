@@ -17,7 +17,7 @@ class BlogController extends Controller
         $blogs = Blog::query()
             ->orderBy('created_at', 'DESC')
             ->filter($request->only('filter'))
-            ->paginate(10)
+            ->paginate(8)
             ->withQueryString();
 
         return Inertia::render('Blog/Index', [

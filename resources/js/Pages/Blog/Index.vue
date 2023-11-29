@@ -29,7 +29,7 @@ const deleteTrade = (id) => {
 	<Head title="Blogs" />
 	<AuthenticatedLayout>
 		<template #header>
-		<h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight"><a :href="route('blogs.index')">Blogs</a> <PrimaryLink :href="route('blogs.index', {filter:'only'})" class="max-w-xl ml-2" >View Trashed</PrimaryLink></h2>
+		<h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight"><a :href="route('blogs.index')">Blogs</a> <PrimaryLink :href="route('blogs.index', {filter:'only'})" class="max-w-xl ml-2" >View Trashed</PrimaryLink> <PrimaryLink :href="route('blogs.create')" class="max-w-xl ml-2" >Add Blog</PrimaryLink></h2>
 		</template>
 		<div class="py-12">
 			<div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
